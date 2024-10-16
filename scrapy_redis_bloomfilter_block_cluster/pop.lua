@@ -6,10 +6,9 @@
 ---
 
 local result = redis.call('zrange', KEYS[1], 0, 0)
-local element = result[1]
-if element then
+if result[1] then
     redis.call('zremrangebyrank', KEYS[1], 0, 0)
-    return element
+    return result[1]
 else
     return nil
 end

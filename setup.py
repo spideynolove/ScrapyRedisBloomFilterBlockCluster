@@ -22,11 +22,11 @@ setup(
     install_requires=[
         'six>=1.13.0',
         'mmh3>=2.5.1',
-        'twisted==19.10.0',
-        'scrapy==1.8.0',
-        'redis-py-cluster==2.0.0',
-        'redis==3.0.1'  # redis-py-cluster 2.0.0, latest support redis 3.0.1
-        # 'redis-py-cluster==2.1.0',
-        # 'redis==3.3.11',
+        'twisted==22.10.0',
+        'scrapy==2.11.2',
+        # 'redis-py-cluster==2.0.0',
+        # 'redis==4.4.4'
+        'redis-py-cluster==2.1.0',
+        'redis==3.3.11',
     ]
 )

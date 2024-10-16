@@ -50,7 +50,7 @@ SCHEDULER = "scrapy_redis_bloomfilter_block_cluster.scheduler.Scheduler"
 # True: the queue and deduplication queue won't be deleted when exiting, default is True
 SCHEDULER_PERSIST = True
 
-# Queue class, supports FifoQueue, LifoQueue, PriorityQueue, SimpleQueue, default is FifoQueue
+# Queue class, supports FifoQueue, LifoQueue, PriorityQueue, default is FifoQueue
 SCHEDULER_QUEUE_CLASS = 'scrapy_redis_bloomfilter_block_cluster.queue.FifoQueue'
 
 # Queue key, used to save scrapy request objects (serialized), default %(spider)s:requests (the current crawler name)
